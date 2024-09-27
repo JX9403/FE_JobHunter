@@ -1,0 +1,27 @@
+/* The following line can be included in a src/App.scss */
+
+$colorBlack: #121212;
+$colorRed: #ed1b2f;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+}
+
+.layout-app {
+  a {
+    text-decoration: none;
+    color: $colorBlack;
+  }
+  .navbar-nav a.active {
+    color: $colorRed;
+  }
+}
