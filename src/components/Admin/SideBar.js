@@ -44,8 +44,8 @@ const SideBar = (props) => {
                             whiteSpace: 'nowrap',
                         }}
                     >
-                        <DiReact size={'3em'} color={"00bfff"} />
-                        <span >Hoi Dan IT</span>
+
+                        <span >JobHunter</span>
                     </div>
                 </SidebarHeader>
 
@@ -86,7 +86,7 @@ const SideBar = (props) => {
                             rel="noopener noreferrer"
                         >
                             <span style={{ whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>
-                                &#169; Hỏi Dân IT Udemy
+                                &#169; B21DCPT075
                             </span>
                         </a>
                     </div>
