@@ -41,6 +41,30 @@ const getAllUser = async () => {
   }
 }
 
+const putUpdateUser = async (id, name, gender, address, age, role, company) => {
+  let data = {
+    id: id,
+    name: name,
+    gender: gender,
+    address: address,
+    age: age,
+    role: role,
+    company: company
+  }
+
+  try {
+    const response = await axios.put('api/v1/users', data);
+    return response.data;
+    // console.log('User created successfully:', response.data);
+  } catch (error) {
+    if (error.response) {
+      // console.error('Response data:', error.response.data);
+      return error.response.data;
+      // toast.error(error.response.data.message);
+    }
+  }
+}
 
 
-export { postCreateNewUser, getAllUser }
+
+export { postCreateNewUser, getAllUser, putUpdateUser }
